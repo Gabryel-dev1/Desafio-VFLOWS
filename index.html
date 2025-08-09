@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Cadastro de fornecedor/produto</h1>
+
+    <form id="formulario_cadastro">
+      <div class="section-formulario dados-fornecedor">
+        <h2>Dados do fornecedor</h2>
+        <div>
+          <label for="razaoSocial">Razão Social</label>
+          <input type="text" id="razaoSocial" name="razaoSocial" required>
+        </div>
+        <div>
+          <label for="CNPJ">CNPJ</label>
+          <input type="text" id="CNPJ" name="CNPJ" required>
+        </div>
+        <div>
+          <label for="nomeFantasia">Nome Fantasia</label>
+          <input type="text" id="nomeFantasia" name="nomeFantasia" required>
+        </div>
+        <div>
+          <label for="inscricaoEstadual">Inscrição Estadual</label>
+          <input type="text" id="inscricaoEstadual" name="inscricaoEstadual" required>
+        </div>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" required>
+        </div>
+        <div>
+          <label for="inscricaoMunicipal">Inscrição Municipal</label>
+          <input type="text" id="inscricaoMunicipal" name="inscricaoMunicipal" required>
+        </div>
+        <div>
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" name="endereco" required>
+        </div>
+        <div>
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero" required>
+        </div>
+        <div>
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento">
+        </div>
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" required>
+        </div>
+        <div>
+          <label for="municipio">Municipio</label>
+          <input type="text" id="municipio" name="municipio" required>
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado" required>
+        </div>
+        <div>
+          <label for="nomeContato">Nome de Pessoa de Contato</label>
+          <input type="text" id="nomeContato" name="nomeContato" required>
+        </div>
+        <div>
+          <label for="telefoneContato">Telefone</label>
+          <input type="tel" id="telefoneContato" name="telefoneContato" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+      <div class="section-formulario dados-produto">
+        <h2>Produtos</h2>
+        <div class="produto">
+          <button type="button" class="deletar">X</button>
+          <div>
+            <h3>Produdo - 1</h3>
+            <img src="#" alt="Imagem do Produto">
+            <div>
+              <label for="nomeProduto">Produto</label>
+              <input type="text" id="nomeProduto" name="nomeProduto" required>
+            </div>
+            <div>
+              <label for="undMedida">UND. Medida</label>
+              <select id="undMedida" name="undMedida" required>
+                <option value="kg">KG</option>
+                <option value="unidade">Unidade</option>
+                <option value="litro">Litro</option>
+              </select>
+
+            </div>
+            <div>
+              <label for="qdtdeEstoque">QDTDE. em Estoque</label>
+              <input type="number" id="qdtdeEstoque" name="qdtdeEstoque" required>
+            </div>
+            <div>
+              <label for="valorUnitario">Valor Unitário</label>
+              <input type="number" id="valorUnitario" name="valorUnitario" required>
+            </div>
+            <div>
+              <label for="valorTotal">Valor Total</label>
+              <input type="number" id="valorTotal" name="valorTotal" required> <!-- Valor total calculado automaticamente -->
+            </div>
+          </div>
+
+          <button type="button">Adicionar Produto</button>
+        </div>
+      </div>
+      <div class="section-formulario anexos">
+        <h2>Anexos</h2>
+        <div>
+          <h3>Itens</h3>
+          <div>
+            <button type="button" class="deletar">X</button>
+            <button type="button" class="verDocumento">O</button>
+            <p>Documento anexo 1</p>
+          </div>
+        </div>
+        <button type="button">Incluir Anexo</button>
+      </div>
+      <button type="submit">Salvar Fornecedor</button>
+    </form>
+  </main>
+</body>
+
+</html>
